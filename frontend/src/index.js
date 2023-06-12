@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {HelmetProvider} from 'react-helmet-async';
 import { PayPalScriptProvider} from '@paypal/react-paypal-js';
-// import Axios from 'axios';
+import Axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StoreProvider } from './Store';
-// Axios.defaults.baseURL = 'https://tiendaonline-h68o.onrender.com';
+Axios.defaults.baseURL = 'https://tiendaonline-h68o.onrender.com';
 
 ReactDOM.render(
   <React.StrictMode>
